@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 28, 2016 11:06:23 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="rolax.prueba.map.Usuario" table="usuario" catalog="analisisdatos" optimistic-lock="version">
+        <id name="idUsuario" type="string">
+            <column name="id_usuario" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="200" not-null="true" />
+        </property>
+        <property name="codigo" type="string">
+            <column name="codigo" length="50" not-null="true" />
+        </property>
+        <property name="cantidadLlenado" type="int">
+            <column name="cantidad_llenado" not-null="true" />
+        </property>
+        <property name="fechaLlenado1" type="timestamp">
+            <column name="fecha_llenado_1" length="19" not-null="true" />
+        </property>
+        <property name="fechaRegistro" type="timestamp">
+            <column name="fecha_registro" length="19" not-null="true" />
+        </property>
+        <set name="respuestasCuestionarioses" table="respuestas_cuestionarios" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_usuario" length="50" not-null="true" />
+            </key>
+            <one-to-many class="rolax.prueba.map.RespuestasCuestionarios" />
+        </set>
+    </class>
+</hibernate-mapping>

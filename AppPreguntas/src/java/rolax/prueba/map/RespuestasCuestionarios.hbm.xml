@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 28, 2016 11:06:23 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="rolax.prueba.map.RespuestasCuestionarios" table="respuestas_cuestionarios" catalog="analisisdatos" optimistic-lock="version">
+        <id name="idCuestionario" type="string">
+            <column name="id_cuestionario" length="50" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="usuario" class="rolax.prueba.map.Usuario" fetch="select">
+            <column name="id_usuario" length="50" not-null="true" />
+        </many-to-one>
+        <property name="r1" type="string">
+            <column name="r1" length="10" not-null="true" />
+        </property>
+        <property name="r2" type="string">
+            <column name="r2" length="10" not-null="true" />
+        </property>
+        <property name="r3" type="string">
+            <column name="r3" length="10" not-null="true" />
+        </property>
+        <property name="r4" type="string">
+            <column name="r4" length="10" not-null="true" />
+        </property>
+        <property name="r5" type="string">
+            <column name="r5" length="10" not-null="true" />
+        </property>
+        <property name="r6" type="string">
+            <column name="r6" length="10" not-null="true" />
+        </property>
+        <property name="r7" type="string">
+            <column name="r7" length="10" not-null="true" />
+        </property>
+        <property name="r8" type="string">
+            <column name="r8" length="10" not-null="true" />
+        </property>
+        <property name="r9" type="string">
+            <column name="r9" length="10" not-null="true" />
+        </property>
+        <property name="r10" type="string">
+            <column name="r10" length="10" not-null="true" />
+        </property>
+        <property name="r11" type="string">
+            <column name="r11" length="10" not-null="true" />
+        </property>
+        <property name="r12" type="string">
+            <column name="r12" length="10" not-null="true" />
+        </property>
+        <property name="r13" type="string">
+            <column name="r13" length="10" not-null="true" />
+        </property>
+        <property name="r14" type="string">
+            <column name="r14" length="10" not-null="true" />
+        </property>
+        <property name="r15" type="string">
+            <column name="r15" length="10" not-null="true" />
+        </property>
+        <property name="r16" type="string">
+            <column name="r16" length="10" not-null="true" />
+        </property>
+        <property name="r17" type="string">
+            <column name="r17" length="10" not-null="true" />
+        </property>
+        <property name="r18" type="string">
+            <column name="r18" length="10" not-null="true" />
+        </property>
+        <property name="r19" type="string">
+            <column name="r19" length="10" not-null="true" />
+        </property>
+        <property name="r20" type="string">
+            <column name="r20" length="10" not-null="true" />
+        </property>
+        <property name="r21" type="string">
+            <column name="r21" length="10" not-null="true" />
+        </property>
+        <property name="r22" type="string">
+            <column name="r22" length="10" not-null="true" />
+        </property>
+        <property name="r23" type="string">
+            <column name="r23" length="10" not-null="true" />
+        </property>
+        <property name="r24" type="string">
+            <column name="r24" length="10" not-null="true" />
+        </property>
+        <property name="r25" type="string">
+            <column name="r25" length="10" not-null="true" />
+        </property>
+        <property name="r26" type="string">
+            <column name="r26" length="10" not-null="true" />
+        </property>
+        <property name="r27" type="string">
+            <column name="r27" length="10" not-null="true" />
+        </property>
+        <property name="r28" type="string">
+            <column name="r28" length="10" not-null="true" />
+        </property>
+        <property name="r29" type="string">
+            <column name="r29" length="10" not-null="true" />
+        </property>
+        <property name="r30" type="string">
+            <column name="r30" length="10" not-null="true" />
+        </property>
+        <property name="r31" type="string">
+            <column name="r31" length="10" not-null="true" />
+        </property>
+        <property name="r32" type="string">
+            <column name="r32" length="10" not-null="true" />
+        </property>
+        <property name="r33" type="string">
+            <column name="r33" length="10" not-null="true" />
+        </property>
+        <property name="r34" type="string">
+            <column name="r34" length="10" not-null="true" />
+        </property>
+        <property name="r35" type="string">
+            <column name="r35" length="10" not-null="true" />
+        </property>
+        <property name="r36" type="string">
+            <column name="r36" length="10" not-null="true" />
+        </property>
+        <property name="r37" type="string">
+            <column name="r37" length="10" not-null="true" />
+        </property>
+        <property name="r38" type="string">
+            <column name="r38" length="10" not-null="true" />
+        </property>
+        <property name="r39" type="string">
+            <column name="r39" length="10" not-null="true" />
+        </property>
+        <property name="r40" type="string">
+            <column name="r40" length="10" not-null="true" />
+        </property>
+        <property name="r41" type="string">
+            <column name="r41" length="10" not-null="true" />
+        </property>
+        <property name="r42" type="string">
+            <column name="r42" length="10" not-null="true" />
+        </property>
+        <property name="r43" type="string">
+            <column name="r43" length="10" not-null="true" />
+        </property>
+        <property name="r44" type="string">
+            <column name="r44" length="10" not-null="true" />
+        </property>
+        <property name="r45" type="string">
+            <column name="r45" length="10" not-null="true" />
+        </property>
+        <property name="r46" type="string">
+            <column name="r46" length="10" not-null="true" />
+        </property>
+        <property name="r47" type="string">
+            <column name="r47" length="10" not-null="true" />
+        </property>
+        <property name="r48" type="string">
+            <column name="r48" length="10" not-null="true" />
+        </property>
+        <property name="r49" type="string">
+            <column name="r49" length="10" not-null="true" />
+        </property>
+        <property name="r50" type="string">
+            <column name="r50" length="10" not-null="true" />
+        </property>
+        <property name="r51" type="string">
+            <column name="r51" length="10" not-null="true" />
+        </property>
+        <property name="fechaRegistro" type="timestamp">
+            <column name="fecha_registro" length="19" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
